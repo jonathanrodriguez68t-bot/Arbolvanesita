@@ -142,13 +142,6 @@ function startFloatingObjects() {
 }
 
 // Cuenta regresiva o fecha especial
-function showCountdown() {
-  const container = document.getElementById('countdown');
-  let startParam = getURLParam('start');
-  let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00');
-
   function update() {
     const now = new Date();
     let diff = now - startDate;
